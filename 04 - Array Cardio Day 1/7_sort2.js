@@ -8,3 +8,9 @@ const people = [
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+people.sort( (a, b) => {
+    let name1 = a.split(", ");
+    let name2 = b.split(", ");
+    return name1[1] > name2[1] ? 1 : -1;
+});
+console.log(people);
